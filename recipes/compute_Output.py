@@ -10,11 +10,6 @@ import dataiku
 import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
 
-
-# Write recipe outputs
-Output = dataiku.Dataset("Output")
-Output.write_with_schema(Output_df)
-
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: MARKDOWN
 # ## Reading Data
 
@@ -33,10 +28,15 @@ years = pd.Series(list(range(2021,2100)))
 revenue = finance_input["Revenue (All regions)"]
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+output_df = pd.concat({
+    'Year': years,
+    "Revenue (All regions)": revenue
+})
 
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: MARKDOWN
+# ## Saving Logic
 
-# Compute recipe outputs
-# TODO: Write here your actual code that computes the outputs
-# NB: DSS supports several kinds of APIs for reading and writing data. Please see doc.
-
-Output_df = ... # Compute a Pandas dataframe to write into Output
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+# Write recipe outputs
+Output = dataiku.Dataset("Output")
+Output.write_with_schema(output_df)
