@@ -5,6 +5,10 @@
     {
       "objectId": "GHG_Emissions",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "Input",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
