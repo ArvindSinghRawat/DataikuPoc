@@ -11,7 +11,7 @@ function getData(form) {
 document.getElementById("mainForm").addEventListener("submit", function (e) {
     alert("Show me");
     console.log(e);
-    console.log(e.target);
+    console.log(e.target.entries());
   e.preventDefault();
   getData(e.target);
 });
