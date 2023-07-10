@@ -33,6 +33,9 @@ output_df = pd.concat({
     "Revenue (All regions)": revenue
 }, axis=1)
 
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+output_df.interpolate(method="barycentric", limit_direction="forward")
+
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: MARKDOWN
 # ## Saving Logic
 
