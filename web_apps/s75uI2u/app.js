@@ -3,10 +3,13 @@
  * https://doc.dataiku.com/dss/latest/api/js/index.html
  */
 function submitForm(event) {
-    var value = `Form Submitted! Timestamp: ${event.timeStamp}`;
-    alert(value);
-    alert(event);
-    console.log(event);
+  var formData = new FormData(form);
+
+  for (var pair of formData.entries()) {
+    console.log(pair[0] + ": " + pair[1]);
+  }
+    
+    event.preventDefault();
 }
 
 const form = document.getElementById("mainForm");
