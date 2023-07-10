@@ -35,7 +35,7 @@ print('Done Extraction')
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 output_df = pd.concat({
     'year': years,
-    "Revenue (All regions)": finance
+    "Revenue (All regions)": revenue
 }, axis=1)
 output_df
 print('Done Extrapolation')
