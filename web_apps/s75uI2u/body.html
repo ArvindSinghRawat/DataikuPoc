@@ -681,13 +681,13 @@
         >
         <div class="row col-sm-8 no-gutter" id="marketShareDivision">
           <div class="col-sm-4 input-group disabled">
-              <label class="input-group-addon" for="worldShare">World</label>
-              <input
-                type="number"
-                class="form-control"
-                id="worldShare"
-                placeholder="World"
-              />
+            <label class="input-group-addon" for="worldShare">World</label>
+            <input
+              type="number"
+              class="form-control"
+              id="worldShare"
+              placeholder="World"
+            />
           </div>
           <div class="col-sm-4 input-group">
             <label class="input-group-addon" for="worldShare">Asia</label>
@@ -707,6 +707,31 @@
               placeholder="OECD"
             />
           </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-4 control-label" for="fossilFuelShare"
+          >Share of Fossil Fuels</label
+        >
+        <div class="input-group col-sm-8">
+          <div class="input-group-addon">$</div>
+          <input
+            type="number"
+            min="0"
+            max="100"
+            class="form-control disabled"
+            id="deprAmtLastYear"
+            placeholder="Fossil fuel percentage"
+          />
+          <div class="input-group-addon">$</div>
+          <input
+            type="number"
+            min="0"
+            max="100"
+            class="form-control"
+            id="deprAmtCurrentYear"
+            placeholder="Non-Fossil fuel percentage"
+          />
         </div>
       </div>
     </div>
