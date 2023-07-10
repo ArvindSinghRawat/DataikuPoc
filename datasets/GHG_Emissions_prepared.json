@@ -37,11 +37,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "hacragajeuddou-5964@toolbox.ovh"
     },
-    "lastModifiedOn": 1688992536857,
+    "lastModifiedOn": 1688992543228,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -70,7 +70,6 @@
   },
   "schema": {
     "columns": [
-      {"name":"Country","type":"string"},
       {"name":"ASIA","type":"bigint"},
       {"name":"MAF","type":"bigint"},
       {"name":"LAC","type":"bigint"},
