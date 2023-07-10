@@ -3,19 +3,19 @@
   "name": "RunCompleteFlow",
   "active": true,
   "creationTag": {
-    "versionNumber": 0,
-    "lastModifiedBy": {
-      "login": "hacragajeuddou-5964@toolbox.ovh"
-    },
-    "lastModifiedOn": 1688995004279,
-    "extendedProperties": {}
-  },
-  "versionTag": {
     "versionNumber": 1,
     "lastModifiedBy": {
       "login": "hacragajeuddou-5964@toolbox.ovh"
     },
     "lastModifiedOn": 1688995345655,
+    "extendedProperties": {}
+  },
+  "versionTag": {
+    "versionNumber": 2,
+    "lastModifiedBy": {
+      "login": "hacragajeuddou-5964@toolbox.ovh"
+    },
+    "lastModifiedOn": 1688995564642,
     "extendedProperties": {}
   },
   "checklists": {
@@ -45,7 +45,7 @@
         "minute": 0,
         "hour": 19,
         "timezone": "Asia/Calcutta",
-        "lastUpdate": 1688995345655
+        "lastUpdate": 1688995564643
       }
     }
   ],
@@ -72,7 +72,36 @@
     }
   ],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "build_2_true_f_no373Kqp",
+        "type": "build_flowitem",
+        "name": "Step #1",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "builds": [
+            {
+              "type": "MANAGED_FOLDER",
+              "itemId": "no373Kqp",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "RECURSIVE_FORCED_BUILD",
+          "autoUpdateSchemaBeforeEachRecipeRun": true,
+          "refreshHiveMetastore": true,
+          "handleWarningsAs": "WARNING",
+          "proceedOnFailure": false
+        }
+      }
+    ]
   },
   "automationLocal": false,
   "customFields": {}
