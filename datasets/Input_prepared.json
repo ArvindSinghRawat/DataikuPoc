@@ -37,11 +37,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "hacragajeuddou-5964@toolbox.ovh"
     },
-    "lastModifiedOn": 1688992524637,
+    "lastModifiedOn": 1688992705418,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -70,6 +70,7 @@
   },
   "schema": {
     "columns": [
+      {"name":"Per 10-K","type":"string"},
       {"name":"Cash and cash equivalents","type":"bigint"},
       {"name":"Short Term Debt","type":"bigint"},
       {"name":"Long Term Debt","type":"bigint"},
