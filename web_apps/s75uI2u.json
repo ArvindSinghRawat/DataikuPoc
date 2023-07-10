@@ -2,9 +2,9 @@
   "type": "STANDARD",
   "hasLegacyBackendURL": false,
   "params": {
-    "backendEnabled": false,
+    "backendEnabled": true,
     "enableJavascriptModules": false,
-    "autoStartBackend": false,
+    "autoStartBackend": true,
     "hideJSSecurityPanel": false,
     "envSelection": {
       "envMode": "INHERIT"
@@ -12,7 +12,8 @@
     "nbProcesses": 1,
     "libraries": [
       "jquery",
-      "dataiku"
+      "dataiku",
+      "bootstrap"
     ],
     "infra": {
       "containerSelection": {
@@ -37,17 +38,17 @@
         "config": {}
       }
     },
-    "forceAuthentication": false
+    "forceAuthentication": true
   },
   "config": {},
   "name": "ScenarioExplorerInput",
   "apiKey": "2fG6T97g6ivWjnCqYdq7VmbuyeGDNdgt",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "hacragajeuddou-5964@toolbox.ovh"
     },
-    "lastModifiedOn": 1688966746708,
+    "lastModifiedOn": 1688966779714,
     "extendedProperties": {}
   },
   "creationTag": {
