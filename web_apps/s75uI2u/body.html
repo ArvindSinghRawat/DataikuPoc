@@ -713,7 +713,7 @@
         <label class="col-sm-4 control-label" for="fossilFuelShare"
           >Share of Fossil Fuels</label
         >
-        <div class="input-group col-sm-8">
+        <div class="input-group col-sm-8" id="fossilFuelShare">
           <input
             type="number"
             min="0"
@@ -734,6 +734,40 @@
           <div class="input-group-addon">%</div>
         </div>
       </div>
+      <div class="form-group form-inline">
+        <label class="col-sm-4 control-label" for="yearsDivision"
+          >Projetced for</label
+        >
+        <div class="row col-sm-8 no-gutter" id="marketShareDivision">
+          <div class="col-sm-4 input-group disabled">
+            <label class="input-group-addon" for="worldShare">Short term</label>
+            <input
+              type="number"
+              class="form-control"
+              id="worldShare"
+              placeholder="World"
+            />
+          </div>
+          <div class="col-sm-4 input-group">
+            <label class="input-group-addon" for="worldShare">Medium Term</label>
+            <input
+              type="number"
+              class="form-control"
+              id="taxRatePrcnt"
+              placeholder="Asia"
+            />
+          </div>
+          <div class="col-sm-4 input-group">
+            <label class="input-group-addon" for="worldShare">Long term</label>
+            <input
+              type="number"
+              class="form-control"
+              id="taxRatePrcnt"
+              placeholder="OECD"
+            />
+          </div>
+        </div>
+      </div>        
     </div>
     <!-- Other Details Ends -->
     <button class="btn btn-primary" type="submit">Submit</button>
