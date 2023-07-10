@@ -1,0 +1,171 @@
+{
+  "type": "FilesInFolder",
+  "managed": false,
+  "featureGroup": false,
+  "formatType": "excel",
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "formatParams": {
+    "xlsx": true,
+    "preserveNumberFormatting": false,
+    "parseDatesToISO": false,
+    "skipRowsBeforeHeader": 0,
+    "parseHeaderRow": true,
+    "skipRowsAfterHeader": 0,
+    "sheets": "*Inputs"
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "hacragajeuddou-5964@toolbox.ovh"
+    },
+    "lastModifiedOn": 1688991600089,
+    "extendedProperties": {}
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "hacragajeuddou-5964@toolbox.ovh"
+    },
+    "lastModifiedOn": 1688991600089,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "params": {
+    "folderSmartId": "FD6cSHi8",
+    "notReadyIfEmpty": false,
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    }
+  },
+  "schema": {
+    "columns": [
+      {"name":"Per 10-K","type":"string"},
+      {"name":"Cash and cash equivalents","type":"string"},
+      {"name":"Short Term Debt","type":"string"},
+      {"name":"Long Term Debt","type":"string"},
+      {"name":"Revenue (All regions)","type":"string"},
+      {"name":"Depreciation","type":"string"},
+      {"name":"Long Term Tax rate","type":"string"},
+      {"name":"Number of Shares","type":"string"},
+      {"name":"EBITDA, % of net sales","type":"string"},
+      {"name":"Capital expenditures (Investing Activities, net cash used in investing activities)","type":"string"},
+      {"name":"Current Assets","type":"string"},
+      {"name":"Current Liabilities","type":"string"},
+      {"name":"Shareholder Equity","type":"string"},
+      {"name":"Total Debt","type":"string"},
+      {"name":"Average interest rate on debt incurred","type":"string"},
+      {"name":"Earnings before income taxes (EBITDA) (total company actual)","type":"string"}
+    ],
+    "userModified": true
+  },
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "basic:COUNT_FILES",
+        "basic:SIZE",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}
