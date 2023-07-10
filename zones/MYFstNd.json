@@ -5,10 +5,6 @@
     {
       "objectId": "Output",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_Output",
-      "objectType": "RECIPE"
     }
   ],
   "shared": [],
