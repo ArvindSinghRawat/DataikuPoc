@@ -1,12 +1,7 @@
 {
   "name": "Pre-Processing",
   "color": "#C82423",
-  "items": [
-    {
-      "objectId": "Input_Data_filtered",
-      "objectType": "DATASET"
-    }
-  ],
+  "items": [],
   "shared": [],
   "tags": [],
   "customFields": {},
