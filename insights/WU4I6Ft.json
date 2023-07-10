@@ -1,0 +1,33 @@
+{
+  "type": "web_app",
+  "params": {
+    "webAppSmartId": "s75uI2u",
+    "webAppType": "STANDARD",
+    "apiKey": "2fG6T97g6ivWjnCqYdq7VmbuyeGDNdgt"
+  },
+  "owner": "hacragajeuddou-5964@toolbox.ovh",
+  "listed": false,
+  "name": "ScenarioExplorerInput",
+  "dashboardCreationId": "Fzyd9ac",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "hacragajeuddou-5964@toolbox.ovh"
+    },
+    "lastModifiedOn": 1688979185312,
+    "extendedProperties": {}
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "hacragajeuddou-5964@toolbox.ovh"
+    },
+    "lastModifiedOn": 1688979185312,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
