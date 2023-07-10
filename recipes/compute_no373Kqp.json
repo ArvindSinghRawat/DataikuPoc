@@ -3,7 +3,80 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "clearOutputPartition": false
+    "clearOutputPartition": false,
+    "exportParams": {
+      "destinationType": "CUSTOM_MANAGED",
+      "temporaryFileBehavior": "AUTO",
+      "originatingOptionId": "tableau-hyper_upload-6f5a4d428b091eb07cc7113aa2a92632",
+      "format": {
+        "type": "csv",
+        "params": {
+          "style": "excel",
+          "charset": "utf8",
+          "separator": "\t",
+          "quoteChar": "\"",
+          "escapeChar": "\\",
+          "dateSerializationFormat": "ISO",
+          "arrayMapFormat": "json",
+          "hiveSeparators": [
+            "\u0002",
+            "\u0003",
+            "\u0004",
+            "\u0005",
+            "\u0006",
+            "\u0007",
+            "\b"
+          ],
+          "skipRowsBeforeHeader": 0,
+          "parseHeaderRow": false,
+          "skipRowsAfterHeader": 0,
+          "probableNumberOfRecords": 0,
+          "normalizeBooleans": false,
+          "normalizeDoubles": true,
+          "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+          "readMissingColumnsBehavior": "DISCARD_SILENT",
+          "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+          "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+          "fileReadFailureBehavior": "FAIL",
+          "compress": ""
+        }
+      },
+      "destinationDatasetProjectKey": "UIPOC",
+      "overwriteDestinationDataset": false,
+      "exporterType": "exporter_tableau-hyper-export_tableau-hyper_upload",
+      "config": {
+        "usePreset": true,
+        "ignore_ssl": false,
+        "retrieve_project_list": true,
+        "project": "default",
+        "output_table": "dataiku_export",
+        "tableau_server_connection": {
+          "mode": "PRESET",
+          "name": "Tableu Trial"
+        },
+        "project_id": "a9d65f6d-cb3c-46a4-96da-2b2dbfe1986a"
+      },
+      "applyExplorationFilters": false,
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "selectedPartitions": [],
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": 100000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      }
+    }
   },
   "customMeta": {
     "kv": {}
@@ -34,11 +107,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "hacragajeuddou-5964@toolbox.ovh"
     },
-    "lastModifiedOn": 1688996925711,
+    "lastModifiedOn": 1688996965167,
     "extendedProperties": {}
   },
   "creationTag": {
