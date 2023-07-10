@@ -1,7 +1,12 @@
 {
   "name": "Processing",
   "color": "#31439C",
-  "items": [],
+  "items": [
+    {
+      "objectId": "Output",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
