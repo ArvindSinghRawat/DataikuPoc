@@ -1,14 +1,14 @@
-/*
- * For more information, refer to the "Javascript API" documentation:
- * https://doc.dataiku.com/dss/latest/api/js/index.html
- */
-function submitForm(event) {
-  var formData = new FormData(event.target);
+function getData(form) {
+  var formData = new FormData(form);
 
   for (var pair of formData.entries()) {
     console.log(pair[0] + ": " + pair[1]);
   }
+
+  console.log(Object.fromEntries(formData));
 }
 
-const form = document.getElementById("mainForm");
-form.addEventListener("submit", submitForm);
+document.getElementById("mainForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+  getData(e.target);
+});
