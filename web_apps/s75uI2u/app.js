@@ -7,6 +7,8 @@ function getData(form) {
 }
 
 function obj2FormData(obj, formData = new FormData()){
+    
+    console.log(obj);
 
     this.formData = formData;
 
