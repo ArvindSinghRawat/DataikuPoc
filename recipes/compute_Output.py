@@ -30,7 +30,7 @@ finance_input_df = finance_input.get_dataframe()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 years = pd.Series(list(range(2021,2100)))
-revenue = finance_input[]
+revenue = finance_input["Revenue (All regions)"]
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 
