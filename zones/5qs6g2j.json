@@ -3,10 +3,6 @@
   "color": "#C82423",
   "items": [
     {
-      "objectId": "compute_Input_Data_by_Per_10K",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "Input_Data_by_Per_10K",
       "objectType": "DATASET"
     },
