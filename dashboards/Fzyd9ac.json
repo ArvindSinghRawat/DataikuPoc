@@ -7,8 +7,8 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": -1,
-              "left": -1,
+              "top": 0,
+              "left": 0,
               "width": 3,
               "height": 3
             },
@@ -33,11 +33,11 @@
   "name": "UiPoc\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "hacragajeuddou-5964@toolbox.ovh"
     },
-    "lastModifiedOn": 1688979185314,
+    "lastModifiedOn": 1688979186800,
     "extendedProperties": {}
   },
   "creationTag": {
