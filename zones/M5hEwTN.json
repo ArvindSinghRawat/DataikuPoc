@@ -1,7 +1,16 @@
 {
   "name": "Pre-Processing",
   "color": "#31439C",
-  "items": [],
+  "items": [
+    {
+      "objectId": "compute_PivotedData",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "PivotedData",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
