@@ -1,7 +1,7 @@
 function getData(form) {
   var formData = new FormData(form);
     
-  console.log(obj2FormData(formData);
+  console.log(obj2FormData(formData));
 
   console.log(Object.fromEntries(formData));
 }
