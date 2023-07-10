@@ -1,5 +1,6 @@
 function getData(form) {
   var formData = new FormData(form);
+    console.log(formData);
 
   for (var pair of formData.entries()) {
     console.log(pair[0] + ": " + pair[1]);
@@ -11,7 +12,7 @@ function getData(form) {
 document.getElementById("mainForm").addEventListener("submit", function (e) {
     alert("Show me");
     console.log(e);
-    console.log(e.target.entries());
+    console.log(e.target);
   e.preventDefault();
   getData(e.target);
 });
