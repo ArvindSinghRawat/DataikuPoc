@@ -28,8 +28,26 @@
   },
   "explorationFilters": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "Per 10-K"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -55,7 +73,24 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "Long Term Debt": 120,
+    "Long Term Tax rate": 150,
+    "Average interest rate on debt incurred": 300,
+    "Earnings before income taxes (EBITDA) (total company actual)": 300,
+    "Number of Shares": 135,
+    "Current Liabilities": 158,
+    "Shareholder Equity": 150,
+    "Current Assets": 120,
+    "Short Term Debt": 128,
+    "EBITDA, % of net sales": 180,
+    "Depreciation": 105,
+    "Cash and cash equivalents": 203,
+    "Per 10-K": 106,
+    "Total Debt": 120,
+    "Revenue (All regions)": 173,
+    "Capital expenditures (Investing Activities, net cash used in investing activities)": 300
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
