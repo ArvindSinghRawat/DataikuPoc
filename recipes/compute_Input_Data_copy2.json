@@ -2,6 +2,36 @@
   "type": "update",
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
+  "params": {
+    "uniqueKey": [
+      "Per 10-K"
+    ],
+    "filter": {
+      "distinct": false,
+      "enabled": true,
+      "uiData": {
+        "mode": "||",
+        "conditions": [
+          {
+            "input": "Current Year",
+            "operator": "not empty",
+            "col": "Previous Year",
+            "num": 0.0
+          },
+          {
+            "input": "Previous Year",
+            "operator": "not empty",
+            "col": "Previous Year",
+            "num": 0.0
+          }
+        ]
+      }
+    },
+    "deleteMissingRows": false,
+    "addMissingRows": true,
+    "deleteMissingCols": false,
+    "addMissingCols": true
+  },
   "customMeta": {
     "kv": {}
   },
@@ -31,11 +61,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "hacragajeuddou-5964@toolbox.ovh"
     },
-    "lastModifiedOn": 1688990924634,
+    "lastModifiedOn": 1688990968995,
     "extendedProperties": {}
   },
   "creationTag": {
