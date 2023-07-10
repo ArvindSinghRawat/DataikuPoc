@@ -1,7 +1,17 @@
 {
   "dashboardAuthorizations": {
     "allAuthorized": false,
-    "authorizations": []
+    "authorizations": [
+      {
+        "objectRef": {
+          "objectId": "s75uI2u",
+          "objectType": "WEB_APP"
+        },
+        "modes": [
+          "READ"
+        ]
+      }
+    ]
   },
   "exposedObjects": {
     "objects": []
@@ -208,11 +218,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
-      "login": "api:07FFX1EULEUR4EBV"
+      "login": "hacragajeuddou-5964@toolbox.ovh"
     },
-    "lastModifiedOn": 1688967410929,
+    "lastModifiedOn": 1688979184843,
     "extendedProperties": {}
   },
   "creationTag": {
