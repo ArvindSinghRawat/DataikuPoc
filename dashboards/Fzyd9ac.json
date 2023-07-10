@@ -1,0 +1,36 @@
+{
+  "pages": [
+    {
+      "id": "AkOcwvz",
+      "grid": {
+        "tiles": []
+      },
+      "showTitle": false
+    }
+  ],
+  "owner": "hacragajeuddou-5964@toolbox.ovh",
+  "listed": true,
+  "name": "UiPoc\u0027s default dashboard",
+  "showGrid": true,
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "hacragajeuddou-5964@toolbox.ovh"
+    },
+    "lastModifiedOn": 1688966716789,
+    "extendedProperties": {}
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "hacragajeuddou-5964@toolbox.ovh"
+    },
+    "lastModifiedOn": 1688966716789,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
