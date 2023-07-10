@@ -11,10 +11,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_Input_Data_filtered",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "Input_Data_filtered",
       "objectType": "DATASET"
     }
