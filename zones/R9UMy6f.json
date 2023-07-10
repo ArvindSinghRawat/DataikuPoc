@@ -1,7 +1,12 @@
 {
   "name": "Export",
   "color": "#D03713",
-  "items": [],
+  "items": [
+    {
+      "objectId": "no373Kqp",
+      "objectType": "MANAGED_FOLDER"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
