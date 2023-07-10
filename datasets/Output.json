@@ -37,11 +37,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "hacragajeuddou-5964@toolbox.ovh"
     },
-    "lastModifiedOn": 1688996428933,
+    "lastModifiedOn": 1688997216278,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -69,8 +69,11 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {"name":"Year","type":"bigint"},
+      {"name":"Revenue (All regions)","type":"double"}
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
