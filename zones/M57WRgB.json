@@ -1,7 +1,16 @@
 {
   "name": "Pre-Processing",
   "color": "#F9BE40",
-  "items": [],
+  "items": [
+    {
+      "objectId": "Processed_Input",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_Processed_Input",
+      "objectType": "RECIPE"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
