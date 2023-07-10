@@ -27,20 +27,23 @@ finance_input_df = finance_input.get_dataframe()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 years = pd.Series(list(range(2021, 2100)))
-finance_input_df["Cash and cash equivalents"]
+revenue = finance_input_df["Revenue (All regions)"]
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-years
+output_df = pd.concat({
+    'year': years,
+    "Revenue (All regions)": finance
+}, axis=1)
+output_df
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+output_df = output_df.interpolate(method ='barycentric', limit_direction ='forward')
+output_df
 
-# Compute recipe outputs
-# TODO: Write here your actual code that computes the outputs
-# NB: DSS supports several kinds of APIs for reading and writing data. Please see doc.
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: MARKDOWN
+# ## Saving data
 
-Output_df = ... # Compute a Pandas dataframe to write into Output
-
-
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Write recipe outputs
 Output = dataiku.Dataset("Output")
-Output.write_with_schema(Output_df)
+Output.write_with_schema(output_df)
