@@ -34,7 +34,7 @@ output_df = pd.concat({
 }, axis=1)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-output_df.interpolate(method="barycentric", limit_direction="forward")
+output_df = output_df.interpolate(method="barycentric", limit_direction="forward")
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: MARKDOWN
 # ## Saving Logic
