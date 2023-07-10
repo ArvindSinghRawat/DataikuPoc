@@ -12,7 +12,7 @@ function getData(form) {
 document.getElementById("mainForm").addEventListener("submit", function (e) {
     alert("Show me");
     console.log(e);
-    console.log(serialize(document.forms[0]););
+    console.log(serialize(document.forms[0]));
   e.preventDefault();
   getData(e.target);
 });
