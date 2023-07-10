@@ -315,18 +315,23 @@
           >Division of Market</label
         >
         <div class="input-group col-sm-8">
+          <label class="input-group-addon" for="worldShare">World</label>
           <input
             type="number"
             class="form-control"
-            id="taxRatePrcnt"
+            id="worldShare"
             placeholder="World"
           />
-          <input
-            type="number"
-            class="form-control"
-            id="taxRatePrcnt"
-            placeholder="Asia"
-          />
+          <fieldset disabled>
+              <label class="input-group-addon" for="worldShare">Asia</label>
+              <input
+                type="number"
+                class="form-control"
+                id="taxRatePrcnt"
+                placeholder="Asia"
+              />
+            </fieldset>
+          <label class="input-group-addon" for="worldShare">OECD</label>
           <input
             type="number"
             class="form-control"
