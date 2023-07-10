@@ -31,7 +31,7 @@ revenue = finance_input_df["Revenue (All regions)"]
 output_df = pd.concat({
     'Year': years,
     "Revenue (All regions)": revenue
-})
+}, axis=1)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: MARKDOWN
 # ## Saving Logic
