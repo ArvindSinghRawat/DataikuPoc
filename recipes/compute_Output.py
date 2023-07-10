@@ -27,7 +27,7 @@ finance_input_df = finance_input.get_dataframe()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 years = pd.Series(list(range(2021, 2100)))
-finance_input_df[]
+finance_input_df["Cash and cash equivalents"]
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 years
