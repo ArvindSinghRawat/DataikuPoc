@@ -3,6 +3,10 @@
   "color": "#D03713",
   "items": [
     {
+      "objectId": "compute_no373Kqp",
+      "objectType": "RECIPE"
+    },
+    {
       "objectId": "no373Kqp",
       "objectType": "MANAGED_FOLDER"
     }

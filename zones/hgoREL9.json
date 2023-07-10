@@ -9,10 +9,6 @@
     {
       "objectId": "Output",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_no373Kqp",
-      "objectType": "RECIPE"
     }
   ],
   "shared": [],
