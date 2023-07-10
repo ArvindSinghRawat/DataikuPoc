@@ -70,16 +70,70 @@
       "copySelectionFromScript": true,
       "engineType": "LINO",
       "def": {
-        "type": "grouped_columns",
+        "type": "lines",
         "variant": "normal",
-        "name": "New chart",
+        "name": "Avg of Revenue (All regions) by year",
         "userEditedName": false,
         "displayWithEChartsByDefault": true,
-        "genericDimension0": [],
+        "genericDimension0": [
+          {
+            "column": "year",
+            "type": "NUMERICAL",
+            "numParams": {
+              "mode": "FIXED_NB",
+              "nbBins": 10,
+              "binSize": 100,
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 100,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of Revenue (All regions), descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of Revenue (All regions), ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          }
+        ],
         "genericDimension1": [],
         "facetDimension": [],
         "animationDimension": [],
-        "genericMeasures": [],
+        "genericMeasures": [
+          {
+            "column": "Revenue (All regions)",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0,
+            "showDisplayLabel": true,
+            "labelPosition": "BOTTOM",
+            "colorRules": []
+          }
+        ],
         "xDimension": [],
         "yDimension": [],
         "uaXDimension": [],
@@ -123,6 +177,7 @@
         "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
+        "filters": [],
         "axis1LogScale": false,
         "axis2LogScale": false,
         "includeZero": true,
@@ -193,6 +248,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
@@ -212,9 +268,10 @@
           "lockSquareGrid": false
         },
         "mapGridOptions": {
-          "gridLonDeg": 0.6,
-          "gridLatDeg": 0.6
+          "gridLonDeg": 0.5,
+          "gridLatDeg": 0.5
         },
+        "thumbnailData": "data:image/png;base64,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\u003d",
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT",
         "pivotMeasureDisplayMode": "ROWS",
