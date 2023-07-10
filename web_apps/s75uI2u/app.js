@@ -8,8 +8,6 @@ function submitForm(event) {
   for (var pair of formData.entries()) {
     console.log(pair[0] + ": " + pair[1]);
   }
-    
-    event.preventDefault();
 }
 
 const form = document.getElementById("mainForm");
