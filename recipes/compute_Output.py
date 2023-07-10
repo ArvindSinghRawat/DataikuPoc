@@ -1,14 +1,38 @@
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: MARKDOWN
+# # Processing
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: MARKDOWN
+# ## Imports
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # -*- coding: utf-8 -*-
 import dataiku
 import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
 
-# Read recipe inputs
-GHG_Emissions_prepared = dataiku.Dataset("GHG_Emissions_prepared")
-GHG_Emissions_prepared_df = GHG_Emissions_prepared.get_dataframe()
-Input_prepared = dataiku.Dataset("Input_prepared")
-Input_prepared_df = Input_prepared.get_dataframe()
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: MARKDOWN
+# ## Reading datasets
 
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+# Read recipe inputs
+ghg_input = dataiku.Dataset("GHG_Emissions_prepared")
+ghg_input_df = ghg_input.get_dataframe()
+finance_input = dataiku.Dataset("Input_prepared")
+finance_input_df = finance_input.get_dataframe()
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: MARKDOWN
+# ## Actual Processing
+# 
+# - Computes a range of years, and then extrapolates linearly till 2100
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+years = pd.Series(list(range(2021, 2100)))
+finance_input_df[]
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+years
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 
 # Compute recipe outputs
 # TODO: Write here your actual code that computes the outputs
