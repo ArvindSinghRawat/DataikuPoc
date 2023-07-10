@@ -1,7 +1,7 @@
 {
   "type": "step_based",
   "name": "RunCompleteFlow",
-  "active": false,
+  "active": true,
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
@@ -11,11 +11,11 @@
     "extendedProperties": {}
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "hacragajeuddou-5964@toolbox.ovh"
     },
-    "lastModifiedOn": 1688995004279,
+    "lastModifiedOn": 1688995345655,
     "extendedProperties": {}
   },
   "checklists": {
@@ -27,8 +27,50 @@
     "suppressTriggersWhileRunning": true
   },
   "tags": [],
-  "triggers": [],
-  "reporters": [],
+  "triggers": [
+    {
+      "id": "5zfFVUFz",
+      "type": "temporal",
+      "name": "Time-based",
+      "delay": 5,
+      "active": true,
+      "params": {
+        "repeatFrequency": 1,
+        "frequency": "Hourly",
+        "startingFrom": "2023-07-10",
+        "daysOfWeek": [
+          "Monday"
+        ],
+        "monthlyRunOn": "ON_THE_DAY",
+        "minute": 0,
+        "hour": 19,
+        "timezone": "Asia/Calcutta",
+        "lastUpdate": 1688995345655
+      }
+    }
+  ],
+  "reporters": [
+    {
+      "active": true,
+      "messaging": {
+        "type": "webhook-scenario",
+        "configuration": {
+          "url": "https://dataiku-asr-trial.free.beeceptor.com",
+          "method": "POST",
+          "payload": "{\n  \"Name of the scenario\": \"${scenarioName}\",\n  \"Name of the scenario trigger\": \"${triggerName}\",\n  \"Type of the scenario trigger\": \"${triggerType}\",\n  \"Scenario result\": \"${outcome}\",\n  \"Textual summary of all events in the scenario\": \"${allEventsSummary}\",\n  \"Textual summary of events with warnings\": \"${warningsEventsSummary}\",\n  \"Textual summary of failed events\": \"${failedEventsSummary}\",\n  \"# of steps\": \"${allStepsCount}\",\n  \"# of successful steps\": \"${successStepsCount}\",\n  \"# of steps with warning\": \"${warningStepsCount}\",\n  \"# of failed steps\": \"${failedStepsCount}\",\n  \"# of Jobs\": \"${allJobsCount}\",\n  \"# of successful Jobs\": \"${successJobsCount}\",\n  \"# of Jobs with warning\": \"${warningJobsCount}\",\n  \"# of failed Jobs\": \"${failedJobsCount}\",\n  \"# of Built datasets\": \"${allBuiltDatasetsCount}\",\n  \"# of successfully built datasets\": \"${successBuiltDatasetsCount}\",\n  \"# of datasets builts with warnings\": \"${warningBuiltDatasetsCount}\",\n  \"# of failed Datasets builds\": \"${failedBuiltDatasetsCount}\",\n  \"Name of first failed step\": \"${firstFailedStepName}\",\n  \"Name of first failed build job\": \"${firstFailedJobName}\",\n  \"URL of the DSS instance\": \"${dssURL}\",\n  \"URL of the scenario run report\": \"${scenarioRunURL}\"\n}\n",
+          "mime": "application/json",
+          "headers": [],
+          "parameters": [],
+          "form": [],
+          "useProxy": true
+        }
+      },
+      "id": "cmXUQWdf",
+      "runConditionEnabled": true,
+      "runCondition": "outcome !\u003d \u0027SUCCESS\u0027",
+      "phase": "END"
+    }
+  ],
   "params": {
     "steps": []
   },
