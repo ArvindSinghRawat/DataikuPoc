@@ -1,16 +1,7 @@
 {
   "name": "Processing",
   "color": "#087ABF",
-  "items": [
-    {
-      "objectId": "compute_Output",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "Output",
-      "objectType": "DATASET"
-    }
-  ],
+  "items": [],
   "shared": [],
   "tags": [],
   "customFields": {},
