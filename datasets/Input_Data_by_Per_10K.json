@@ -60,11 +60,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "hacragajeuddou-5964@toolbox.ovh"
     },
-    "lastModifiedOn": 1688990581205,
+    "lastModifiedOn": 1688990632756,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -92,8 +92,193 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": false
+    "columns": [
+      {"name":"Previous Year","type":"string"},
+      {"name":"Current Year","type":"string"},
+      {"name":"null_Per 10-K_count","type":"bigint"},
+      {"name":"Average interest rate on debt incurred_count","type":"bigint"},
+      {"name":"Capital expenditures (Investing Activities, net cash used in investing activities)_count","type":"bigint"},
+      {"name":"Cash and cash equivalents_count","type":"bigint"},
+      {"name":"Current Assets_count","type":"bigint"},
+      {"name":"Current Liabilities_count","type":"bigint"},
+      {"name":"Depreciation_count","type":"bigint"},
+      {"name":"EBITDA, % of net sales_count","type":"bigint"},
+      {"name":"Earnings before income taxes (EBITDA) (total company actual)_count","type":"bigint"},
+      {"name":"GHG Emissions, Total Scope 1 and 2 Emissions_count","type":"bigint"},
+      {"name":"Long Term Debt_count","type":"bigint"},
+      {"name":"Long Term Tax rate_count","type":"bigint"},
+      {"name":"Number of Shares_count","type":"bigint"},
+      {"name":"Revenue (All regions)_count","type":"bigint"},
+      {"name":"Shareholder Equity_count","type":"bigint"},
+      {"name":"Short Term Debt_count","type":"bigint"},
+      {"name":"Total Debt_count","type":"bigint"},
+      {"name":"WACC_count","type":"bigint"}
+    ],
+    "userModified": false,
+    "metadata": {
+      "engineType": "DSS",
+      "pivotElementsModalities": [
+        {
+          "pivotElement": {
+            "keyColumns": [
+              "Per 10-K"
+            ],
+            "valueLimit": "TOP_N",
+            "topnLimit": 20,
+            "minOccLimit": 0,
+            "explicitValues": [],
+            "globalCount": true,
+            "valueColumns": []
+          },
+          "pivotedModalities": [
+            {
+              "keyValues": [
+                null
+              ],
+              "name": "null_Per 10-K",
+              "valueColumns": [],
+              "globalCountColumn": "null_Per 10-K_count"
+            },
+            {
+              "keyValues": [
+                "Average interest rate on debt incurred"
+              ],
+              "name": "Average interest rate on debt incurred",
+              "valueColumns": [],
+              "globalCountColumn": "Average interest rate on debt incurred_count"
+            },
+            {
+              "keyValues": [
+                "Capital expenditures (Investing Activities, net cash used in investing activities)"
+              ],
+              "name": "Capital expenditures (Investing Activities, net cash used in investing activities)",
+              "valueColumns": [],
+              "globalCountColumn": "Capital expenditures (Investing Activities, net cash used in investing activities)_count"
+            },
+            {
+              "keyValues": [
+                "Cash and cash equivalents"
+              ],
+              "name": "Cash and cash equivalents",
+              "valueColumns": [],
+              "globalCountColumn": "Cash and cash equivalents_count"
+            },
+            {
+              "keyValues": [
+                "Current Assets"
+              ],
+              "name": "Current Assets",
+              "valueColumns": [],
+              "globalCountColumn": "Current Assets_count"
+            },
+            {
+              "keyValues": [
+                "Current Liabilities"
+              ],
+              "name": "Current Liabilities",
+              "valueColumns": [],
+              "globalCountColumn": "Current Liabilities_count"
+            },
+            {
+              "keyValues": [
+                "Depreciation"
+              ],
+              "name": "Depreciation",
+              "valueColumns": [],
+              "globalCountColumn": "Depreciation_count"
+            },
+            {
+              "keyValues": [
+                "EBITDA, % of net sales"
+              ],
+              "name": "EBITDA, % of net sales",
+              "valueColumns": [],
+              "globalCountColumn": "EBITDA, % of net sales_count"
+            },
+            {
+              "keyValues": [
+                "Earnings before income taxes (EBITDA) (total company actual)"
+              ],
+              "name": "Earnings before income taxes (EBITDA) (total company actual)",
+              "valueColumns": [],
+              "globalCountColumn": "Earnings before income taxes (EBITDA) (total company actual)_count"
+            },
+            {
+              "keyValues": [
+                "GHG Emissions, Total Scope 1 and 2 Emissions"
+              ],
+              "name": "GHG Emissions, Total Scope 1 and 2 Emissions",
+              "valueColumns": [],
+              "globalCountColumn": "GHG Emissions, Total Scope 1 and 2 Emissions_count"
+            },
+            {
+              "keyValues": [
+                "Long Term Debt"
+              ],
+              "name": "Long Term Debt",
+              "valueColumns": [],
+              "globalCountColumn": "Long Term Debt_count"
+            },
+            {
+              "keyValues": [
+                "Long Term Tax rate"
+              ],
+              "name": "Long Term Tax rate",
+              "valueColumns": [],
+              "globalCountColumn": "Long Term Tax rate_count"
+            },
+            {
+              "keyValues": [
+                "Number of Shares"
+              ],
+              "name": "Number of Shares",
+              "valueColumns": [],
+              "globalCountColumn": "Number of Shares_count"
+            },
+            {
+              "keyValues": [
+                "Revenue (All regions)"
+              ],
+              "name": "Revenue (All regions)",
+              "valueColumns": [],
+              "globalCountColumn": "Revenue (All regions)_count"
+            },
+            {
+              "keyValues": [
+                "Shareholder Equity"
+              ],
+              "name": "Shareholder Equity",
+              "valueColumns": [],
+              "globalCountColumn": "Shareholder Equity_count"
+            },
+            {
+              "keyValues": [
+                "Short Term Debt"
+              ],
+              "name": "Short Term Debt",
+              "valueColumns": [],
+              "globalCountColumn": "Short Term Debt_count"
+            },
+            {
+              "keyValues": [
+                "Total Debt"
+              ],
+              "name": "Total Debt",
+              "valueColumns": [],
+              "globalCountColumn": "Total Debt_count"
+            },
+            {
+              "keyValues": [
+                "WACC"
+              ],
+              "name": "WACC",
+              "valueColumns": [],
+              "globalCountColumn": "WACC_count"
+            }
+          ]
+        }
+      ]
+    }
   },
   "dkuProperties": [],
   "metrics": {
