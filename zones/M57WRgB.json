@@ -5,10 +5,6 @@
     {
       "objectId": "Input_prepared",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_Input_prepared",
-      "objectType": "RECIPE"
     }
   ],
   "shared": [],
