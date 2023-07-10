@@ -1,7 +1,16 @@
 {
   "name": "Pre-Processing",
   "color": "#F9BE40",
-  "items": [],
+  "items": [
+    {
+      "objectId": "compute_GHG_Emissions_prepared",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "GHG_Emissions_prepared",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},

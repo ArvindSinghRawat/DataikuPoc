@@ -9,14 +9,6 @@
     {
       "objectId": "Input",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "GHG_Emissions_prepared",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_GHG_Emissions_prepared",
-      "objectType": "RECIPE"
     }
   ],
   "shared": [],
