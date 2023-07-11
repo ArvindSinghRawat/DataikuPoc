@@ -42,6 +42,7 @@
         }
       },
       "destinationDatasetProjectKey": "UIPOC",
+      "destinationDatasetConnection": "dataiku-managed-storage",
       "overwriteDestinationDataset": false,
       "exporterType": "exporter_tableau-hyper-export_tableau-hyper_upload",
       "config": {
@@ -107,11 +108,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "hacragajeuddou-5964@toolbox.ovh"
     },
-    "lastModifiedOn": 1688996965167,
+    "lastModifiedOn": 1689054329000,
     "extendedProperties": {}
   },
   "creationTag": {
