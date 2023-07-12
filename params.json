@@ -51,6 +51,7 @@
       "zonesGraphConnectZones": true
     },
     "gitCommitMode": "AUTO",
+    "useRemoteGit": true,
     "disableAutomaticTriggers": false,
     "integrations": {
       "integrations": []
@@ -218,11 +219,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "hacragajeuddou-5964@toolbox.ovh"
     },
-    "lastModifiedOn": 1688996396894,
+    "lastModifiedOn": 1689147755942,
     "extendedProperties": {}
   },
   "creationTag": {
